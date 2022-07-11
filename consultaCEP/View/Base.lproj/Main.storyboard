@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="consultaCEP" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Msn-dI-wms" userLabel="cepInput">
+                                <rect key="frame" x="20" y="119" width="374" height="34"/>
+                                <color key="backgroundColor" systemColor="systemGray3Color"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="go" textContentType="postal-code"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Dpz-R5-hRA" userLabel="ruaInput">
+                                <rect key="frame" x="20" y="214" width="374" height="34"/>
+                                <color key="backgroundColor" systemColor="systemGray3Color"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0n0-fC-AnI" userLabel="bairroInput">
+                                <rect key="frame" x="20" y="309" width="374" height="34"/>
+                                <color key="backgroundColor" systemColor="systemGray3Color"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="X4b-Uf-WKe" userLabel="cidadeInput">
+                                <rect key="frame" x="20" y="404" width="374" height="34"/>
+                                <color key="backgroundColor" systemColor="systemGray3Color"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="cep" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wdq-K4-fyb">
+                                <rect key="frame" x="20" y="88" width="80" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="rua" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uIz-vl-3EQ">
+                                <rect key="frame" x="20" y="183" width="90.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="bairro" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VDK-kZ-MJp">
+                                <rect key="frame" x="20" y="278" width="116" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="cidade" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sia-Rk-pZE">
+                                <rect key="frame" x="20" y="373" width="80" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="estado" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gey-04-miu">
+                                <rect key="frame" x="20" y="468" width="52" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zco-re-BNa" userLabel="estadoInput">
+                                <rect key="frame" x="20" y="499" width="374" height="34"/>
+                                <color key="backgroundColor" systemColor="systemGray3Color"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="gey-04-miu" firstAttribute="top" secondItem="X4b-Uf-WKe" secondAttribute="bottom" constant="30" id="4uH-s5-fNc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0n0-fC-AnI" secondAttribute="trailing" constant="20" id="55y-pt-RIx"/>
+                            <constraint firstItem="Msn-dI-wms" firstAttribute="top" secondItem="wdq-K4-fyb" secondAttribute="bottom" constant="10" id="5Mw-vf-sEl"/>
+                            <constraint firstItem="Dpz-R5-hRA" firstAttribute="top" secondItem="uIz-vl-3EQ" secondAttribute="bottom" constant="10" id="60C-Ho-lNi"/>
+                            <constraint firstItem="X4b-Uf-WKe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="6gt-G9-l4M"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Dpz-R5-hRA" secondAttribute="trailing" constant="20" id="8k1-AX-suj"/>
+                            <constraint firstItem="uIz-vl-3EQ" firstAttribute="top" secondItem="Msn-dI-wms" secondAttribute="bottom" constant="30" id="Av1-B8-XbI"/>
+                            <constraint firstItem="uIz-vl-3EQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="CKd-WU-axh"/>
+                            <constraint firstItem="zco-re-BNa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Gfj-TO-Ht8"/>
+                            <constraint firstItem="wdq-K4-fyb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="IJd-Ii-lHJ"/>
+                            <constraint firstItem="VDK-kZ-MJp" firstAttribute="top" secondItem="Dpz-R5-hRA" secondAttribute="bottom" constant="30" id="JZo-SH-4fT"/>
+                            <constraint firstItem="0n0-fC-AnI" firstAttribute="top" secondItem="VDK-kZ-MJp" secondAttribute="bottom" constant="10" id="Ja3-m9-PFo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="uIz-vl-3EQ" secondAttribute="trailing" constant="303.5" id="KuZ-sU-jgB"/>
+                            <constraint firstItem="Dpz-R5-hRA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="OJT-yR-OAo"/>
+                            <constraint firstItem="uIz-vl-3EQ" firstAttribute="top" secondItem="Msn-dI-wms" secondAttribute="bottom" constant="30" id="PI5-KJ-fqE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="X4b-Uf-WKe" secondAttribute="trailing" constant="20" id="Pfv-J4-FaD"/>
+                            <constraint firstItem="Msn-dI-wms" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Pll-m5-Dnx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Msn-dI-wms" secondAttribute="trailing" constant="20" id="RZW-Mj-yml"/>
+                            <constraint firstItem="Dpz-R5-hRA" firstAttribute="top" secondItem="uIz-vl-3EQ" secondAttribute="bottom" constant="10" id="SV5-ER-iTy"/>
+                            <constraint firstItem="wdq-K4-fyb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="44" id="T0E-r4-Or9"/>
+                            <constraint firstItem="gey-04-miu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="V5c-FY-Ekr"/>
+                            <constraint firstItem="X4b-Uf-WKe" firstAttribute="top" secondItem="sia-Rk-pZE" secondAttribute="bottom" constant="10" id="Zv3-4l-JfW"/>
+                            <constraint firstItem="zco-re-BNa" firstAttribute="top" secondItem="gey-04-miu" secondAttribute="bottom" constant="10" id="fB7-5a-ZWP"/>
+                            <constraint firstItem="sia-Rk-pZE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="hqH-lb-cex"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wdq-K4-fyb" secondAttribute="trailing" constant="314" id="lDz-Aq-fmj"/>
+                            <constraint firstItem="VDK-kZ-MJp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="mcF-Kq-Ips"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="VDK-kZ-MJp" secondAttribute="trailing" constant="278" id="qn0-Yp-fCV"/>
+                            <constraint firstItem="0n0-fC-AnI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="ucC-EE-2D2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zco-re-BNa" secondAttribute="trailing" constant="20" id="vYC-eG-rCr"/>
+                            <constraint firstItem="sia-Rk-pZE" firstAttribute="top" secondItem="0n0-fC-AnI" secondAttribute="bottom" constant="30" id="wJQ-5a-Qbd"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="inputBairro" destination="0n0-fC-AnI" id="ioJ-vm-5tQ"/>
+                        <outlet property="inputCEP" destination="Msn-dI-wms" id="FeA-Mr-VPD"/>
+                        <outlet property="inputCidade" destination="X4b-Uf-WKe" id="4A2-L2-pWF"/>
+                        <outlet property="inputEstado" destination="zco-re-BNa" id="nUT-a3-KiI"/>
+                        <outlet property="inputRua" destination="Dpz-R5-hRA" id="Wzy-GS-Pxg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-23.188405797101453" y="71.651785714285708"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemGray3Color">
+            <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
